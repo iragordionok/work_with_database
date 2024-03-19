@@ -1,5 +1,8 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from phones.models import Phone
+
+def index(request):
+    return redirect('catalog')
 
 
 def show_catalog(request):
